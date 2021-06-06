@@ -1,0 +1,1 @@
+## A program that accepts 2 integers from the user, one to determine the range of one multiplication table and the other to determine the numbers for which the table will be  printed and accordingly displays the result. 
