@@ -1,7 +1,7 @@
 class Car{
-  int speed;
-  double regularPrice;
-  String color;
+  private int speed;
+  private double regularPrice;
+  private String color;
 
   public Car(){
     speed = 0;
