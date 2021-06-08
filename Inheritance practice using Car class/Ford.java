@@ -1,6 +1,6 @@
 class Ford extends Car{
-  int year;
-  int manufacturerDiscount;
+  private int year;
+  private int manufacturerDiscount;
 
   Ford(){
     year = 0;
@@ -8,11 +8,12 @@ class Ford extends Car{
   }
 
   Ford(int speed, double regularPrice, String color, int year, int manufacturerDiscount){
-    superclass(speed, regularPrice, color, year);
+    superclass(speed, regularPrice, color);
+    this.year = year;
     this.manufacturerDiscount = manufacturerDiscount;
   }
 
   public double getSalePrice(){
-    return (super.regularPrice - manufacturerDiscount);
+    return (super.getSalePrice() - manufacturerDiscount);
   }
 }
