@@ -1,5 +1,5 @@
 class Truck extends Car{
-  int weight;
+  private int weight;
 
   Truck(){
     weight = 0;
@@ -12,10 +12,9 @@ class Truck extends Car{
 
   public double getSalePrice(){
     if (weight > 2000){
-      return (regularPrice - 0.1 * regularPrice);
+      return (super.getSalePrice() - 0.1 * super.getSalePrice());
     }else{
-      return (regularPrice - 0.2 * regularPrice);
+      return (super.getSalePrice() - 0.2 * super.getSalePrice());
     }
   }
-
 }
