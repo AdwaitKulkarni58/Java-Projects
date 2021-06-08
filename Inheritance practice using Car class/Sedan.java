@@ -1,5 +1,5 @@
 class Sedan extends Car{
-  int length;
+  private int length;
 
   Sedan(){
     length = 0;
@@ -12,9 +12,9 @@ class Sedan extends Car{
 
   public double getSalePrice(){
     if (length > 20){
-      return (super.regularPrice - 0.05 * super.regularPrice);
+      return (super.getSalePrice() - 0.05 * super.getSalePrice());
     }else{
-      return (super.regularPrice - 0.1 * super.regularPrice);
+      return (super.getSalePrice() - 0.1 * super.getSalePrice());
     }
   }
 }
